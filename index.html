@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Spinner</title>
+	<!--Defer: Loads the JavaScript after HTML loads -->
+	<script type="text/javascript" src="script.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="main-view">
+		<div id="left-btn" class="rotate-button">&#8249;</div>
+		<svg id="main-svg" width="500" height="500"></svg>
+		<div id="right-btn" class="rotate-button">&#8250;</div>
+	</div>
+	
+	<div id="wheel-functions">
+		<button id="spin-btn">Spin!</button>
+		<button id="config-btn">Configure Wheel</button>
+	</div>
+
+	<div id="config-view">
+		<!--Number of sectors cannot be 0, 1, or 360. Else, the randomDegreeGenerator's while loop will be infinite-->
+		<label for="numberOfSectors">Sectors:</label>
+		<input id="numberOfSectors" type="number" name="numberOfSectors" min="2" max="359" value="2" size="3">
+		
+		<!--Time can't be negative-->
+		<label for="spinTime">Spin Time:</label>
+		<input id="spinTime" type="number" name="spinTime" min="1" max="60" value="6" size="3">
+		
+		<label for="rotateWeight">Rotate Weight (degrees):</label>
+		<input id="rotateWeight" type="number" name="rotateWeight" min="1" value="5" size="3">
+	</div>
+
+	<div id="color-inputs"></div>
+</body>
+</html>

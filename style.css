@@ -1,0 +1,102 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#main-view {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#config-view {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1px;
+}
+
+#config-view label {
+	font-weight: bolder;
+	font-size: 125%;
+}
+/*
+#config-view label:nth-of-type(1) {
+	border-left: 25px solid black;
+}
+*/
+/*
+#config-view input:nth-of-type(3) {
+	border-right: 25px solid black;
+}
+*/
+
+#config-view input {
+	border: none;
+	font-size: 125%;
+	width: 3rem;
+}
+
+
+
+.rotate-button {
+	background: black;
+	color: white;
+	margin-top: -38px;
+	padding: 0;
+	font-weight: bolder;
+	font-size: 1000%;
+	display: flex;
+	align-items: center;
+  	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+ 	-khtml-user-select: none; /* Konqueror HTML */
+   	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */               
+}
+
+.rotate-button:hover {
+	background: gray;
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+button {
+	border: black;
+	background: black;
+	color: white;
+	font-weight: bolder;
+}
+
+
+#wheel-functions {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#wheel-functions button {
+	font-size: 150%;
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+#wheel-functions button:active {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+#color-inputs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.colorPicker {
+	background: white;
+	outline: black;
+}
